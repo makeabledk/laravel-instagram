@@ -2,9 +2,8 @@
 
 namespace Makeable\Instagram;
 
-use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
-use Makeable\Instagram\InstagramClient;
+use League\OAuth2\Client\Provider\Instagram;
 
 class InstagramServiceProvider extends ServiceProvider
 {
@@ -25,14 +24,7 @@ class InstagramServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(InstagramClient::class, function () {
-
-            var_dump('Connect Guzzle');
-
-            /*return tap(new Google_Client, function ($client) {
-                $client->setApplicationName(config('app.name'));
-                $client->setAuthConfig(config('services.google.credentials_file'));
-            });*/
-            // return guzzle client
+            return new Instagram(config('services.instagram'));
         });
     }
 
