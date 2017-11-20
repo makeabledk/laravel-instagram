@@ -1,9 +1,9 @@
 <?php
 
-namespace Makeable\Instagram\Tests;
+namespace Makeable\LaravelInstagram\Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Makeable\Instagram\InstagramServiceProvider;
+use Makeable\LaravelInstagram\InstagramServiceProvider;
 
 
 class TestCase extends BaseTestCase
@@ -29,9 +29,6 @@ class TestCase extends BaseTestCase
 
         $app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
         $app->register(InstagramServiceProvider::class);
-
-
-        // Register config
 
         return $app;
     }

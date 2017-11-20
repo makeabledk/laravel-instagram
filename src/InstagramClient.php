@@ -1,6 +1,6 @@
 <?php
 
-namespace Makeable\Instagram;
+namespace Makeable\LaravelInstagram;
 
 interface InstagramClient
 {

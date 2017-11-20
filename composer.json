@@ -1,6 +1,6 @@
 {
-  "name": "makeabledk/instagram",
-  "description": "Fetch user data from a instagram",
+  "name": "makeabledk/laravel-instagram",
+  "description": "Fetch user data from an instagram account",
   "license": "CC0-1.0",
   "authors": [
     {
@@ -11,18 +11,18 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Makeable\\Instagram\\InstagramServiceProvider"
+        "Makeable\\LaravelInstagram\\InstagramServiceProvider"
       ]
     }
   },
   "autoload": {
     "psr-4": {
-      "Makeable\\Instagram\\": "src/"
+      "Makeable\\LaravelInstagram\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Makeable\\Instagram\\Tests\\": "tests/"
+      "Makeable\\LaravelInstagram\\Tests\\": "tests/"
     }
   },
   "require": {

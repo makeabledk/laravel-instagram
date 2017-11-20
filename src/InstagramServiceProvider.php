@@ -1,6 +1,6 @@
 <?php
 
-namespace Makeable\Instagram;
+namespace Makeable\LaravelInstagram;
 
 use Illuminate\Support\ServiceProvider;
 use League\OAuth2\Client\Provider\Instagram;
