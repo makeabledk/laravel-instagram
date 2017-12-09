@@ -31,6 +31,7 @@ class InstagramUser implements Arrayable, JsonSerializable
         $user = new static;
         $user->client = app(InstagramClient::class);
         $user->data = $user->client->getResourceOwner(new AccessToken(['access_token' => $token]));
+
         return $user;
     }
 
@@ -55,7 +56,7 @@ class InstagramUser implements Arrayable, JsonSerializable
     /**
      * @return array
      */
-    function jsonSerialize()
+    public function jsonSerialize()
     {
         return $this->toArray();
     }

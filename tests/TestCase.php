@@ -5,7 +5,6 @@ namespace Makeable\LaravelInstagram\Tests;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Makeable\LaravelInstagram\InstagramServiceProvider;
 
-
 class TestCase extends BaseTestCase
 {
     public function setUp()
